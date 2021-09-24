@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+<div class="container">
+      <header class="header">
+        <h1 id="title" class="text-center">How much do you know about Long NhAt?</h1>
+        <p id="description" class="description text-center">Thank you for taking the time to help me!!</p>
+      </header>
+      <form id="survey-form" >
+        <div class="form-group">
+          <label id="name-label"  for="name">Name</label>
+          <input id="name" class="form-control" type="text" name="name"  placeholder="Enter your name" required>
+        </div>
+        <div class="form-group">
+          <label id="email-label"  for="email">Email</label>
+          <input id="email" class="form-control" type="email" name="email"  placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+          <label id="number-label"  for="number">Age<span class="note">(Optional)</span></label>
+          <input id="number" class="form-control"  type="number" name="Age" min="10" max="99"  placeholder="Age" required>
+        </div>
+        <div class="form-group">
+          <p>What is your relationship to me?</p>
+          <select id="dropdown" class="form-control" name="role" required>
+            <option disabled selected value>Select the question</option>
+            <option value="1">Friend.</option>
+            <option value="2">Family.</option>
+            <option value="3">BFF.</option>
+            <option value="4">Homie.</option>
+            <option value="5">Honey.</option>
+            <option value="6">Partner.</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <p>Where does Nhat come from?</p>
+          <select id="dropdown" class="form-control" name="role" required>
+            <option disabled selected value>Select the question</option>
+            <option value="1">Hà Nội.</option>
+            <option value="2">Hồ Chí Minh City.</option>
+            <option value="3">Nghệ An.</option>
+            <option value="4">Đà Nẵng.</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <p>When is Nhat's birthday?</p>
+          <label id=""><input type="radio" name="birthday">04/08/2001</label>
+          <label id=""><input type="radio" name="birthday">17/04/2001</label>
+          <label id=""><input type="radio" name="birthday">08/08/2001</label>
+          <label id=""><input type="radio" name="birthday">17/08/2001</label>
+        </div>
+        <div class="form-group">
+          <p>Handsome level?</p>
+          <select id="dropdown" class="form-control" name="role" required>
+            <option disabled selected value>select the question</option>
+            <option value="1">100%</option>
+            <option value="2">1000%</option>
+            <option value="3">one milion %</option>
+            <option value="4">one billion %</option>
+          </select>
+        </div>
+        <div class="dropdown-content">
+          <p>What is Nhat's favorite food?<span class="note">(Check all that apply)</span></p>
+          <label id=""><input type="checkbox" value="Fish">Fish.</label>
+          <label id=""><input type="checkbox" value="Chicken">Chicken.</label>
+          <label id=""><input type="checkbox" value="Vegetable">Vegetable.</label>
+          <label id=""><input type="checkbox" value="Ninem">Ninem.</label>
+        </div>
+        <div class="dropdown-content">
+          <p>What is Nhat's favorite drink?<span class="note">(Check all that apply)</span></p>
+          <label id=""><input type="checkbox" value=">Soda">Soda.</label>
+          <label id=""><input type="checkbox" value="Juice">Juice.</label>
+          <label id=""><input type="checkbox" value="Coffee">Coffee.</label>
+          <label id=""><input type="checkbox" value="Milk">Milk.</label>
+        </div>
+        <div class="dropdown-content">
+          <p>If you and your dog fell into the water, who do you think you would save?<span class="note">(Check all that apply)</span></p>
+          <label id=""><input type="radio" name="help">Dog.</label>
+          <label id=""><input type="radio" name="help">You.</label>
+          <label id=""><input type="radio" name="help">Both.</label>
+          <label id=""><input type="radio" name="help">Nhat can't swim!</label>
+        </div>
+        <div class="form-group">
+          <p>How much do you love Nhật?</p>
+          <select id="dropdown" class="form-control" name="" required>
+            <option disabled selected value>select the question</option>
+            <option value="1">Hate.</option>
+            <option value="2">A little.</option>
+            <option value="3">So much.</option>
+            <option value="4">#1 in your heart.</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>Any comments or suggestions about this Websie?<span class="note">(Thank you)</span></p>
+          <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..."
+          ></textarea>
+        </div>
+
+
+        <div class="thut">
+           <div class="box">
+                <a href="#">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <button id="submit" class="submit-button" type="submit">Submit</button>
+                </a>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
